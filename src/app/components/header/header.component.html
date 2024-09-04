@@ -1,0 +1,16 @@
+<header class="mb-auto">
+  <div class="row row-container">
+    <div class="content mt-4 mb-3">
+      <img src="assets/logo.png" class="d-block mx-lg-auto img-fluid img-logo-header" alt="logo.png" loading="lazy">
+    </div>
+  </div>
+  <div class="row mb-2">
+    <nav class="nav nav-masthead justify-content-center float-md-center">
+      <a class="nav-link p-3 pt-0 pb-0 fw-lighter spacing"  [ngClass]="{'active' : router.url === '/'}" aria-current="page" [routerLink]="['']">INICIO</a>
+      <a class="nav-link p-3 pt-0 pb-0 fw-lighter spacing" [ngClass]="{'active' : router.url === '/about'}" [routerLink]="['/about']">SOBRE MI</a>
+      <a class="nav-link p-3 pt-0 pb-0 fw-lighter spacing" [ngClass]="{'active' : router.url === '/projects'}" [routerLink]="['/projects']">PROYECTOS</a>
+      <a class="nav-link p-3 pt-0 pb-0 fw-lighter spacing" [ngClass]="{'active' : router.url === '/services'}" [routerLink]="['/services']">SERVICIOS</a>
+      <a class="nav-link p-3 pt-0 pb-0 fw-lighter spacing" [ngClass]="{'active' : router.url === '/contact'}" [routerLink]="['/contact']">CONTACTO</a>
+    </nav>
+  </div>
+</header>
